@@ -13,20 +13,13 @@ app.use(function(req,res, next){
 const port = 2410;
 app.listen(port, () => console.log(`listening at port  ${port}!`) );
  
-let {data} = require("./students");
-
-app.get("/svr/students",function(req,res)
-{
-    res.send(data);
-});
 
 
 
 
 
 
-
-/*app.get("/svr/test",function(req,res)
+app.get("/svr/test",function(req,res)
 {
     res.send("successful");
-});*/  
+});
